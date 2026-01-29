@@ -1,0 +1,114 @@
+/**
+ * Global Application Styles
+ * Layout and footer refinements
+ */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+}
+
+.main-content {
+  flex: 1;
+  /* Account for fixed header */
+  padding-top: 0;
+}
+
+/* Footer */
+.footer {
+  background: var(--gradient-footer);
+  color: var(--color-text-tertiary);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(56, 189, 248, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.footer-logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: var(--font-bold);
+  color: var(--color-white);
+}
+
+.footer-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-white);
+}
+
+.footer-text {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  margin: 0;
+  line-height: var(--leading-relaxed);
+}
+
+.footer-link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: var(--font-medium);
+  transition: all var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.footer-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gradient-primary);
+  margin: var(--space-6) auto;
+  border-radius: var(--radius-full);
+}
+
+.footer-meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--space-6) var(--space-4);
+  }
+}

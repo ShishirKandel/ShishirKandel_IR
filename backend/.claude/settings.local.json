@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"E:\\\\Softwarica Project\\\\IR-shishir-kandel-final\\\\*.md\")",
+      "Bash(findstr:*)",
+      "Bash(python manage.py check:*)",
+      "Bash(python manage.py:*)",
+      "Bash(python -c:*)",
+      "Bash(curl:*)",
+      "Bash(ping:*)"
+    ]
+  }
+}
