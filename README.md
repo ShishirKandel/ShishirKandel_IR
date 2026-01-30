@@ -123,8 +123,7 @@ IR-Netra-Budhathoki/
 
 ### Document Classification (25 marks)
 - ✅ Naive Bayes classifier
-- ✅ K-means clustering
-- ✅ 180+ training documents (60+ per category)
+- ✅ 2,865 training documents (955 per category)
 
 ### Usability (10 marks)
 - ✅ Google Scholar-like interface
@@ -133,8 +132,11 @@ IR-Netra-Budhathoki/
 
 ---
 
-## 📚 Training Data Sources
-Record the source URLs and access dates for the training corpus in `data/sources.md`.
+## 📚 Training Data
+
+Training corpus: `data/training_documents.csv` (2,865 documents across 3 categories)
+
+See `data/sources.md` for dataset details.
 
 ---
 
